@@ -1,0 +1,30 @@
+{
+  "name": "presentacion-1-clean-architecture-nodejs",
+  "version": "1.0.0",
+  "description": "Presentacion 1, Arquitectura de Software: Clean Architecture",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app",
+    "start": "node src/app",
+    "utest": "jest src/tests/unit-test --detectOpenHandles --forceExit",
+    "itest": "jest src/tests/integration-test --detectOpenHandles --forceExit"
+  },
+  "author": "Equipo 8",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "basic-auth": "^2.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "jest-junit": "^12.0.0",
+    "pg": "^8.5.1",
+    "randomstring": "^1.1.5",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
