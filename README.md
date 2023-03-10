@@ -10,4 +10,4 @@ Tecnologías usadas:
 - Node JS (Javascript)
 - Express
 - PostgreSQL
-- Sequelize
+- Sequelize ORM
