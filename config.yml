@@ -1,0 +1,13 @@
+version: "1.0.0"
+#Docker compose file with a posgresql container
+services:
+  db:
+    image: postgres:9.6
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: postgres
+      POSTGRES_DB: sample
+    volumes:
+      - ./data:/var/lib/postgresql/data
