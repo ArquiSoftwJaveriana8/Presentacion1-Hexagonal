@@ -14,6 +14,8 @@ const decrypts = require("./decrypt");
 const encrypt = encrypts({ crypto, algorithm, password, iv });
 const decrypt = decrypts({ crypto, algorithm, password, iv });
 // #####################
+
+//Export auxiliar functions
 const services = Object.freeze({
   encrypt,
   decrypt,

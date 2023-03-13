@@ -6,4 +6,5 @@ const query = require("./query");
 const productsDb = query({ connects, models });
 // ######
 
+//Export Products database access
 module.exports = productsDb;

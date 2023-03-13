@@ -9,20 +9,20 @@ const productsDb = require("../../data-access/products/app");
 const { encrypt, decrypt } = require("../../functions/app");
 // #########
 
-//Get CRUD functions
+//Get CRUD use cases
 const addProduct = require("./insert-product");
 const selectProduct = require("./select-product");
 const updateProduct = require("./update-product");
 const deleteProduct = require("./delete-product");
 // #########
-//Relate CRUD functions with Business Logic
-const addProducts = addProduct({ createProducts, productsDb });
+//Relate CRUD use cases with Business Logic
+const addProducts = addProduct({ productsDb, createProducts });
 const selectProducts = selectProduct({ productsDb, decrypt });
-const updateProducts = updateProducts({ productsDb, patchProducts });
-const deleteProducts = deleteProducts({ productsDb });
+const updateProducts = updateProduct({ productsDb, patchProducts });
+const deleteProducts = deleteProduct({ productsDb });
 
 // #########
-//Export services
+//Export use cases
 const services = Object.freeze({
   addProducts,
   selectProducts,

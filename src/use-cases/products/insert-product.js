@@ -1,4 +1,4 @@
-const addProduct = ({ createProducts, productsDb }) => {
+const addProduct = ({ productsDb, createProducts }) => {
     //Post a new product
     return async function post(info) {
       let data = await createProducts(info); // entity

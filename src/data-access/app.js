@@ -8,6 +8,8 @@ const connect = require("./connection");
 // ##############
 const connects = connect({ dotenv, pg });
 // ##############
+
+//Export connection function
 const services = Object.freeze({ connects });
 
 module.exports = services;

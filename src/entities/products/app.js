@@ -3,16 +3,17 @@
 
 const { encrypt, decrypt } = require("../../functions/app");
 // ########
-//Functions
+//Import business logic access
 const createProduct = require("./create-product");
 const patchProduct = require("./patch-product");
 // ########
 
-//Services
+//Link business logic with encryption function
 const createProducts = createProduct({ encrypt });
 const patchProducts = patchProduct({ encrypt });
 // ########
 const services = Object.freeze({ createProducts, patchProducts });
 
+//Export business logic
 module.exports = services;
 module.exports = { createProducts, patchProducts };
