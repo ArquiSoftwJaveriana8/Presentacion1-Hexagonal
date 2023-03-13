@@ -1,5 +1,5 @@
 version: "1.0.0"
-#Docker compose file with a posgresql container
+#Docker compose file with a posgresql container and a web service with node js 
 services:
   db:
     image: postgres:9.6
