@@ -1,5 +1,5 @@
 const productDelete = ({ deleteProducts }) => {
-    return async function del(httpRequest) {
+    return async function get(httpRequest) {
       const headers = {
         "Content-Type": "application/json",
       };

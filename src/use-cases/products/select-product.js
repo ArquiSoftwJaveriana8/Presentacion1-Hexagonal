@@ -24,6 +24,9 @@ const selectProduct = ({ productsDb, decrypt }) => {
             updatedAt: e.updatedAt,
           });
         }
+      }//Not found
+      else{
+        throw new Error("Product not found");
       }
     } else {
       // select all

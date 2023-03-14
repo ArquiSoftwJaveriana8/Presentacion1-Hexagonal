@@ -2,6 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
+
 dotenv.config();
 const app = express();
 
@@ -19,11 +20,13 @@ const server = app.listen(PORT, () => {
 });
 
 // routes
-//app.use("/api/employees", require("./routes/employees/app"));
+app.use("/api/products", require("./routes/products/app"));
 
 
 // when invalid routes are entered
 app.use(async (req, res) => {
+  //Print the route that is no where to be found
+  console.log(req.originalUrl);
   res.status(404).send(`Route is no where to be found.`);
 });
 
