@@ -42,3 +42,29 @@ Para migrar los modelos a la base de datos:
 ```bash
 $ npx sequelize-cli db:migrate
 ```
+
+Para crear un seeder:
+
+```bash
+$ npx sequelize-cli seed:generate --name demo-product
+```
+
+Para ejecutar los seeders:
+
+```bash
+$ npx sequelize-cli db:seed:all
+```
+
+## Ejecución de la aplicación
+Para ejecutar la aplicación se debe ejecutar el siguiente comando:
+```bash
+npm run dev
+```
+Esto ejecutará la aplicación en el puerto 54 si está definido en .env, si no, se utilizará el puerto 3000.
+
+## Endpoints
+- GET /products: Obtiene todos los productos
+- GET /products/:id: Obtiene un producto por id
+- POST /products: Crea un producto -> body: {name, color, size, brand}
+- PUT /products/:id: Actualiza un producto -> body: {name, color, size, brand}
+- DELETE /products/:id: Elimina un producto
