@@ -11,6 +11,7 @@ const addProduct = ({ productsDb, createProducts }) => {
       };
   
       //   insert
+      console.log("USE CASE: Add product");
       const res = await productsDb.insertNewProduct({ data });
   
       // ##

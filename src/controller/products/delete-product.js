@@ -16,6 +16,7 @@ const productDelete = ({ deleteProducts }) => {
           source,
           id: httpRequest.params.id, // when id is passed
         };
+        console.log("REST Controller: Delete product");
         const view = await deleteProducts(toDelete);
         return {
           headers: {

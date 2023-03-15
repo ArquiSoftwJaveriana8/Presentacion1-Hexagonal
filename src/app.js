@@ -4,6 +4,7 @@ const cors = require("cors");
 
 
 dotenv.config();
+env = process.env;
 const app = express();
 
 // accessible to any
@@ -26,7 +27,7 @@ app.use("/api/products", require("./routes/products/app"));
 // when invalid routes are entered
 app.use(async (req, res) => {
   //Print the route that is no where to be found
-  console.log(req.originalUrl);
+  console.log("Wrong route: "+req.originalUrl);
   res.status(404).send(`Route is no where to be found.`);
 });
 

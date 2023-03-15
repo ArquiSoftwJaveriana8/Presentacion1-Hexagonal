@@ -30,6 +30,7 @@ const selectProduct = ({ productsDb, decrypt }) => {
       }
     } else {
       // select all
+      console.log("USE CASE: Select products");
       const res = await productsDb.selectAll({});
       if (res.rowCount > 0) {
         // only when there is data returned

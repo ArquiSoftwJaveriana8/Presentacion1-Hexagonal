@@ -12,6 +12,7 @@ const productUpdate = ({ updateProducts }) => {
           source,
           id: httpRequest.params.id,
         };
+        console.log("REST Controller: Update product");
         const patched = await updateProducts(toEdit);
         return {
           headers: {

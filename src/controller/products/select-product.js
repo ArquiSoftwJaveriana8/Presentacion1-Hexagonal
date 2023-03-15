@@ -17,6 +17,7 @@ const productSelect = ({ selectProducts }) => {
           id: httpRequest.params.id, // when id is passed
         };
         //Call the use case
+        console.log("REST Controller: Select product");
         const view = await selectProducts(toView);
         return {
           headers: {

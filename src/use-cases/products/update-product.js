@@ -16,6 +16,7 @@ const updateProduct = ({ productsDb, patchProducts }) => {
         throw new Error(`Product doesn't exist, please check.`);
 
       // update
+      console.log("USE CASE: Update product");
       const res = await productsDb.patchProduct({ data });
   
       let msg = `Product was not updated, please try again`;

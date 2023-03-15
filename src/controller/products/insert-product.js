@@ -8,6 +8,7 @@ const productAdd = ({ addProducts }) => {
           source.referrer = httpRequest.headers["Referer"];
         }
         //Call the use case
+        console.log("REST Controller: Add product");
         const posted = await addProducts({
           ...info,
           source,
