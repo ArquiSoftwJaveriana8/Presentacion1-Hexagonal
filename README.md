@@ -56,11 +56,17 @@ $ npx sequelize-cli db:seed:all
 ```
 
 ## Ejecución de la aplicación
-Para ejecutar la aplicación se debe ejecutar el siguiente comando:
+Para ejecutar la aplicación se deben ejecutar los siguientes comandos:
+
+```bash
+docker-compose -f config.yaml up
+```
+
 ```bash
 npm run dev
 ```
-Esto ejecutará la aplicación en el puerto 54 si está definido en .env, si no, se utilizará el puerto 3000.
+
+Esto ejecutará la base de datos Postgresql y la aplicación en el puerto 54 si está definido en .env, si no, se utilizará el puerto 3000.
 
 ## Endpoints JSON
 - GET /products: Obtiene todos los productos
