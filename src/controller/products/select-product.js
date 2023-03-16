@@ -18,13 +18,13 @@ const productSelect = ({ selectProducts }) => {
         };
         //Call the use case
         console.log("REST Controller: Select product");
-        const view = await selectProducts(toView);
+        const products = await selectProducts(toView);
         return {
           headers: {
             "Content-Type": "application/json",
           },
           statusCode: 200,
-          body: { view },
+          body: { products },
         };
       } catch (e) {
         // TODO: Error logging

@@ -62,9 +62,13 @@ npm run dev
 ```
 Esto ejecutará la aplicación en el puerto 54 si está definido en .env, si no, se utilizará el puerto 3000.
 
-## Endpoints
+## Endpoints JSON
 - GET /products: Obtiene todos los productos
 - GET /products/:id: Obtiene un producto por id
 - POST /products: Crea un producto -> body: {name, color, size, brand}
 - PUT /products/:id: Actualiza un producto -> body: {name, color, size, brand}
 - DELETE /products/:id: Elimina un producto
+
+## Endpoints XML
+- GET /products-xml: Obtiene todos los productos en formato XML
+- POST /products-xml: Crea un producto en formato XML -> body: {name, color, size, brand}

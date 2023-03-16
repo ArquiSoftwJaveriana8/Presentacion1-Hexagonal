@@ -17,13 +17,13 @@ const productDelete = ({ deleteProducts }) => {
           id: httpRequest.params.id, // when id is passed
         };
         console.log("REST Controller: Delete product");
-        const view = await deleteProducts(toDelete);
+        const product = await deleteProducts(toDelete);
         return {
           headers: {
             "Content-Type": "application/json",
           },
           statusCode: 200,
-          body: { view },
+          body: { product },
         };
       } catch (e) {
         // TODO: Error logging

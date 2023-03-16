@@ -12,6 +12,10 @@ app.use(cors());
 
 // Body Parser middleware to handle raw JSON files
 app.use(express.json());
+// Body Parser middleware to handle XML files
+app.use(express.text({ type: "text/xml" }));
+
+
 app.use(express.urlencoded({ extended: false }));
 
 const PORT = process.env.PORT || 3000;
@@ -22,6 +26,7 @@ const server = app.listen(PORT, () => {
 
 // routes
 app.use("/api/products", require("./routes/products/app"));
+app.use("/api/products-xml", require("./routes/products-xml/app"));
 
 
 // when invalid routes are entered
