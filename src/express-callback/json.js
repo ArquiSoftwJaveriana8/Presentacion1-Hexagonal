@@ -1,7 +1,7 @@
 const makeExpressCallback = (controller) => {
   return (req, res) => {
-    if (req.body.length > 0)
-      console.log("Express Callback: " + JSON.stringify(req.body));
+    
+    //console.log("Express Callback: " + JSON.stringify(req.body));
     const httpRequest = {
       body: req.body,
       query: req.query,

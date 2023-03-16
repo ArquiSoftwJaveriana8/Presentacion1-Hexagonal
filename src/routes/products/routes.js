@@ -4,6 +4,8 @@ const {
     productSelects,
     productUpdates,
     productDeletes,
+    //TXT
+    productAddsTxt,
   } = require("../../controller/products/app");
   
   const route = ({ router, makeExpressCallback, validateAuth }) => {
@@ -16,6 +18,8 @@ const {
   
     // add new Product
     router.post("/", validateAuth, makeExpressCallback(productAdds));
+    // add new Product TXT
+    router.post("/txt", validateAuth, makeExpressCallback(productAddsTxt));
   
     // #####
     // PATCH

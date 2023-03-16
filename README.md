@@ -66,6 +66,7 @@ Esto ejecutará la aplicación en el puerto 54 si está definido en .env, si no,
 - GET /products: Obtiene todos los productos
 - GET /products/:id: Obtiene un producto por id
 - POST /products: Crea un producto -> body: {name, color, size, brand}
+- POST /products/txt: Crea un producto y lo guarda en files/products.txt -> body: {name, color, size, brand}
 - PUT /products/:id: Actualiza un producto -> body: {name, color, size, brand}
 - DELETE /products/:id: Elimina un producto
 

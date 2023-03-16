@@ -16,7 +16,7 @@ const makeExpressCallbackXML = (controller) => {
         req.body[key] = value[0];
       }
 
-      console.log("XML to JSON: " + JSON.stringify(req.body));
+      //console.log("XML to JSON: " + JSON.stringify(req.body));
     }
 
     const httpRequest = {
