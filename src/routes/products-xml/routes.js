@@ -2,8 +2,7 @@
 const {
     productAdds,
     productSelects,
-    //productUpdates,
-    //productDeletes,
+    productAddsTxt,
   } = require("../../controller/products-xml/app");
   
   const route = ({ router, makeExpressCallbackXML, validateAuth }) => {
@@ -16,17 +15,9 @@ const {
   
     // add new Product
     router.post("/", validateAuth, makeExpressCallbackXML(productAdds));
-  
-    // #####
-    // PATCH
-  
-    // update Product
-    //router.put("/:id", validateAuth, makeExpressCallbackXML(productUpdates));
-  
-    // #####
-    // DELETE
-  
-    //router.delete("/:id", validateAuth, makeExpressCallbackXML(productDeletes));
+
+    // add new Product TXT
+    router.post("/txt", validateAuth, makeExpressCallbackXML(productAddsTxt));
   
     return router;
   };
