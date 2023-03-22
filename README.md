@@ -79,3 +79,6 @@ Esto ejecutará la base de datos Postgresql y la aplicación en el puerto 54 si 
 ## Endpoints XML
 - GET /products-xml: Obtiene todos los productos en formato XML
 - POST /products-xml: Crea un producto en formato XML -> body: {name, color, size, brand}
+
+## Arquitectura del sistema
+![alt text](files/Hexagonal%20Architecture%20Component.png "Arquitectura del sistema")
