@@ -83,3 +83,5 @@ Esto ejecutará la base de datos Postgresql y la aplicación en el puerto 54 si 
 
 ## Arquitectura del sistema
 ![alt text](files/Hexagonal%20Architecture%20Component.png "Arquitectura del sistema")
+
+Link de la presentacion: https://www.canva.com/design/DAFeJKBf2xs/R17BM5KwnDVoK7vZh7Wywg/edit?utm_content=DAFeJKBf2xs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
